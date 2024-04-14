@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: '#fff',
     overflow: 'hidden',
+    transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
   },
   arrow: {
     position: 'absolute',

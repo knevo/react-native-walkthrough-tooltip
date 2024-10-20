@@ -46,12 +46,15 @@ declare module 'react-native-walkthrough-tooltip' {
     childrenWrapperStyle?: StyleProp<ViewStyle>;
 
     // Styles the view element that wraps the original children
-    parentWrapperStyle?: StyleProp<ViewStyle>
+    parentWrapperStyle?: StyleProp<ViewStyle>;
   }
 
   export interface TooltipProps extends Partial<TooltipStyleProps> {
     // When true (default), user can interact with child element
     allowChildInteraction?: boolean;
+
+    // Pass elemenmt to be displayed in the tooltip's modal
+    modalContent?: React.ReactElement;
 
     // The dimensions of the arrow on the bubble pointing to the highlighted element
     arrowSize?: TooltipSize;
